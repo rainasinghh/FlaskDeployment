@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mother's Height vs Daughter's Height</title>   
+</head>
+
+<body>
+    <div class="Login">
+        <h1>Predict Daughter's Height</h1>
+        
+        <form action="{{ url_for('predict') }}" method="post">
+            <input type="text" name="mheight" placeholder="Mother's Height" required="required" />
+            
+            <button type="submit" class="btn btn-primary btn-black btn-large">Predict</button>
+        </form>
+        
+        <br>
+        <br>
+        {{ prediction_text }}
+    
+    </div>
+</body>
+
+</html>
